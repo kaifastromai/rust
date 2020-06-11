@@ -1,0 +1,13 @@
+/Users/kaifas/dev/rust/target/rls/debug/deps/libc-a2315f6f2f9f8fe5.rmeta: /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/lib.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/macros.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/fixed_width_ints.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/mod.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/bsd/mod.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/bsd/apple/mod.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/bsd/apple/b64/mod.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/bsd/apple/b64/align.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/align.rs
+
+/Users/kaifas/dev/rust/target/rls/debug/deps/libc-a2315f6f2f9f8fe5.d: /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/lib.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/macros.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/fixed_width_ints.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/mod.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/bsd/mod.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/bsd/apple/mod.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/bsd/apple/b64/mod.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/bsd/apple/b64/align.rs /Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/align.rs
+
+/Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/lib.rs:
+/Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/macros.rs:
+/Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/fixed_width_ints.rs:
+/Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/mod.rs:
+/Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/bsd/mod.rs:
+/Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/bsd/apple/mod.rs:
+/Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/bsd/apple/b64/mod.rs:
+/Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/bsd/apple/b64/align.rs:
+/Users/kaifas/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.71/src/unix/align.rs:

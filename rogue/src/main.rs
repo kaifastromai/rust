@@ -3,10 +3,10 @@ extern crate graphics;
 extern crate opengl_graphics;
 extern crate piston;
 use glutin_window::{GlutinWindow, OpenGL};
-use graphics::character::CharacterCache;
+use graphics::{character::CharacterCache, Transformed};
 use opengl_graphics::{Filter, GlGraphics, GlyphCache, TextureSettings};
 use piston::input::{Button, ButtonState, Key};
-use piston::{EventLoop, EventSettings, Events, RenderEvent, WindowSettings};
+use piston::{ButtonEvent, EventSettings, Events, RenderEvent, WindowSettings};
 
 type Colour = [f32; 4];
 type Map = Vec<Vec<Tile>>;
@@ -35,7 +35,7 @@ impl Object {
             y,
             character,
             colour,
-        };
+        }
     }
 }
 #[derive(Clone)]
@@ -57,10 +57,8 @@ fn make_map() -> Map {
 }
 fn main() {
     let map = make_map();
-    let mut window: GlutinWindow = WindowSettings::new("Rogue", [512; 2])
-        .exit_on_esc(true)
-        .build()
-        .unwrap();
+    let settings = WindowSettings::new("Roguelike", [512; 2]).exit_on_esc(true);
+    let mut window: GlutinWindow = settings.build().expect("Could not create window");
     let opengl = OpenGL::V3_2;
     let mut gl = GlGraphics::new(opengl);
 
@@ -70,7 +68,7 @@ fn main() {
     let texture_settings = TextureSettings::new().filter(Filter::Nearest);
     let ref mut glyphs = GlyphCache::new("assets/Cascadia-Code.ttf", (), texture_settings)
         .expect("Could not load font");
-        
+
     let mut player: Object = Object::new(0, 0, '@', RED);
 
     while let Some(e) = events.next(&mut window) {
@@ -96,9 +94,29 @@ fn main() {
                 }
 
                 use graphics::Transformed;
-                let character = glyphs.character(PIXEL_SIZE, player.character).unwrap();
-               
+                let character = glyphs
+                    .character(PIXEL_SIZE as u32, player.character)
+                    .unwrap();
+
+                graphics::Image::new_color(player.colour).draw(
+                    character.texture,
+                    &c.draw_state,
+                    c.transform.trans(player.x as f64, player.y as f64),
+                    g,
+                );
             });
         };
+
+        if let Some(k) = e.button_args() {
+            if k.state == ButtonState::Press {
+                match k.button {
+                    Button::Keyboard(Key::Up) => player.y -= 32,
+                    Button::Keyboard(Key::Down) => player.y += 32,
+                    Button::Keyboard(Key::Left) => player.x -= 32,
+                    Button::Keyboard(Key::Right) => player.x += 32,
+                    _ => (),
+                }
+            }
+        }
     }
 }
